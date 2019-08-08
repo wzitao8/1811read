@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    {{--<form>--}}
+        <div class="form-group">
+            <label for="exampleInputEmail1">小说名称</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">作者</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div><div class="form-group">
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">点击量</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div >
+            <label for="exampleInputPassword1">小说介绍</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+            <div id="editor" name ="edit">
+                <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+            </div>
+        <button id="btn1">获取html</button>
+        <button id="btn2">获取text</button>
+        <button type="submit" class="btn btn-default">Submit</button>
+    {{--</form>--}}
+
+</body>
+</html>
+<script type="text/javascript" src="/release/wangEditor.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var E = window.wangEditor
+        var editor = new E('#editor')
+        // 或者 var editor = new E( document.getElementById('editor') )
+        editor.create()
+        
+    })
+
+</script>
